@@ -52,14 +52,13 @@ int partition( int a[], int l, int r)
 		do ++i; 
 		while(a[i] <= pivot && i <= r );
 		do --j; 
-
 		while( a[j] > pivot );
-	   	
+		
 		if( i >= j ) 
 		{
 		break;
 		}
-
+		
 		t = a[i];
 		a[i] = a[j];
 		a[j] = t;
